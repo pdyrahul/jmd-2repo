@@ -6,7 +6,7 @@ import ReviewCard from './components/ReviewCard';
 import './App.css'; // Import custom CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
 import NavTabs from './components/NavTabs';
-import CTA from './components/Cta';
+import Cta from './components/Cta';
 import UsefulLinks from './components/UsefulLinks';
 
 
@@ -18,7 +18,7 @@ function App() {
       <HeroSection />
       <ReviewCard />
       <NavTabs />
-      <CTA />
+      <Cta/>
       <UsefulLinks/>
       <Footer />
     </div>
