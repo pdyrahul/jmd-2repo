@@ -13,7 +13,8 @@ const NavTabs = () => {
 
   return (
     <div className="container my-5">
-      <ul className="nav nav-pills mb-3 flex-wrap">
+      {/* Regular tabs for larger screens */}
+      <ul className="nav nav-pills mb-3 flex-wrap d-none d-md-flex">
         <li className="nav-item">
           <button
             className={`nav-link ${activeTab === 'tab1' ? 'active' : ''}`}
@@ -39,6 +40,50 @@ const NavTabs = () => {
           </button>
         </li>
       </ul>
+
+      {/* Dropdown menu for smaller screens */}
+      <div className="dropdown d-md-none mb-3">
+        <button
+          className="btn btn-secondary dropdown-toggle w-100"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {activeTab === 'tab1'
+            ? 'Services Offer By Dealer'
+            : activeTab === 'tab2'
+            ? 'Deals In Brands'
+            : 'Payment Methods'}
+        </button>
+        <ul className="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+          <li>
+            <button
+              className={`dropdown-item ${activeTab === 'tab1' ? 'active' : ''}`}
+              onClick={() => handleTabClick('tab1')}
+            >
+              Services Offer By Dealer
+            </button>
+          </li>
+          <li>
+            <button
+              className={`dropdown-item ${activeTab === 'tab2' ? 'active' : ''}`}
+              onClick={() => handleTabClick('tab2')}
+            >
+              Deals In Brands
+            </button>
+          </li>
+          <li>
+            <button
+              className={`dropdown-item ${activeTab === 'tab3' ? 'active' : ''}`}
+              onClick={() => handleTabClick('tab3')}
+            >
+              Payment Methods
+            </button>
+          </li>
+        </ul>
+      </div>
+
       <div className="tab-content">
         {activeTab === 'tab1' && (
           <div className="tab-pane fade show active">
