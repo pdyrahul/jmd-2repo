@@ -21,7 +21,7 @@ img {
 button {
   padding: 0;
 }
-
+.card-body button{background-color: #ea3138 !important; color:#fff; border:none !important;}
 /* Header */
 .topHeader {
   position: sticky;
