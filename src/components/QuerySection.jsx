@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const Cta = () => (
+const QuerySection = () => (
   <section id="QueryCta" className="QueryCta my-5">
     <div className="container">
       <h2 className="text-center mb-4">Have a question about Tyres?</h2>
@@ -15,4 +15,4 @@ const Cta = () => (
 );
 
 
-export default Cta
+export default QuerySection

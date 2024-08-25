@@ -6,8 +6,8 @@ import ReviewCard from './components/ReviewCard';
 import './App.css'; // Import custom CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
 import NavTabs from './components/NavTabs';
-import Cta from './components/Cta';
 import UsefulLinks from './components/UsefulLinks';
+import QuerySection from './components/QuerySection';
 
 
 
@@ -18,7 +18,7 @@ function App() {
       <HeroSection />
       <ReviewCard />
       <NavTabs />
-      <Cta/>
+     <QuerySection/>
       <UsefulLinks/>
       <Footer />
     </div>
