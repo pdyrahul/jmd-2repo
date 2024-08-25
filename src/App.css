@@ -242,6 +242,7 @@ nav ul li a {
     font-size: 1rem; /* Adjust font size for smaller screens */
     margin: 20px 0; /* Adjust margin for smaller screens */
   }
+  .service_gallery .mainImg img {border-radius:40px 0;}
   .rating {
     flex-direction: column;
     align-items: center;
