@@ -1,0 +1,268 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand";
+  line-height: 1.6;
+}
+button, img, ul, a {
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+button {
+  padding: 0;
+}
+
+/* Header */
+.topHeader {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+nav ul li a {
+  padding: 8px;
+  background-color: aliceblue;
+  border-radius: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+}
+.user_log span button {
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+/* CTA Button */
+.getDirection {
+  width: 50%;
+  padding: 10px 40px;
+  border-radius: 100vh;
+  box-shadow: rgba(104, 104, 178, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #ea3138;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Toggle Menu */
+.toggleMenu {
+  display: none;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  padding: 50px 0;
+}
+.wender_info {
+  position: sticky;
+  top: 40px;
+  padding: 70px 0;
+}
+.wender_info h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ea3138;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+}
+.hero-section h1 span {
+  font-size: 16px;
+  color: #4CA72C;
+  position: absolute;
+  bottom: 14px;
+}
+.hero-section p {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.rateLeft {
+  color: #fcc933;
+}
+.rateRight {
+  color: #4CA72C;
+}
+.rating span {
+  color: initial;
+  font-size: larger;
+  font-weight: 400;
+}
+
+/* Image Gallery */
+.mainImg img {
+  display: block;
+  margin-bottom: 10px;
+}
+.tabImg {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.tabImg img {
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 20px 0;
+  transition: border-color 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2px;
+}
+.tabImg img:hover {
+  border-color: #ea3138;
+}
+.tabImg::-webkit-scrollbar {
+  height: 8px;
+}
+.tabImg::-webkit-scrollbar-thumb {
+  background-color: #ea3138;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.service_gallery .mainImg img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  border-radius: 100px 0;
+}
+
+/* Reviews Section */
+.reviews, .QueryCta {
+  background: #eceeee;
+  padding: 70px 0;
+}
+
+/* Multitab Section */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #ea3138;
+}
+.card.text-center img {
+  margin: 0 auto;
+  width: 30%;
+}
+.tab-content .card {
+  border-radius: 40px 0;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border: none;
+}
+.tab-content ul {
+  display: flex;
+  gap: 20px;
+}
+.tab-content ul li {
+  width: 200px;
+}
+.tab-content ul li a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px 0;
+}
+.tab-content ul li a img {
+  width: 100%;
+  height: 70px;
+  border-radius: 20px 0;
+}
+
+/* Search Input */
+.serachInput.text-center input {
+  border: none;
+  padding: 10px;
+  width: 50%;
+  border-radius: 100vh;
+}
+/* Media Queries */
+@media screen and (max-width: 996px) {
+  nav, .user_log {
+    display: none;
+  }
+  .toggleMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+  /* Added styles for hero-section in this breakpoint */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .hero-section p {
+    text-align: center;
+  }
+  .rating {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-section {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+  .hero-section h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+  .hero-section p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin: 20px 0; /* Adjust margin for smaller screens */
+  }
+  .rating {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .serachInput.text-center input {
+    width: 100%;
+  }
+  .wender_info button {
+    margin: 0 auto;
+    min-width: 200px;
+  }
+  .nav-pills {
+    overflow-x: scroll;
+  }
+  .tab-content ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .tab-content ul li {
+    width: 45%;
+  }
+}
