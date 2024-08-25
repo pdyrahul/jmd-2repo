@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+p,ul{margin:0};
 body {
   font-family: "Quicksand";
   line-height: 1.6;
