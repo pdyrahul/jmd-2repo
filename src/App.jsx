@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is import
 import NavTabs from './components/NavTabs';
 import UsefulLinks from './components/UsefulLinks';
 import QuerySection from './components/QuerySection';
-
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 function App() {
