@@ -250,8 +250,8 @@ nav ul li a {
   .serachInput.text-center input {
     width: 100%;
   }
+  .wender_info{text-align:center;}
   .wender_info button {
-    margin: 0 auto;
     min-width: 200px;
   }
   .nav-pills {
